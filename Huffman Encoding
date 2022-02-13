@@ -1,0 +1,15 @@
+#What are Huffman Codes?
+
+Huffman codes were created by David A. Huffman.
+In laymen terms, you enter a text file and it encodes it into bits which decreases file size, then we decode it again to get the raw text.
+For every character these codes are unique, the concept uses priority queues and node creation.
+
+For better ubderstanding of application of Huffman Encoding you check this video out.
+
+https://www.youtube.com/watch?v=_Kl3TtBXxq8
+https://www.youtube.com/watch?v=JCOph23TQTY
+
+First video gives explanation & second video shows implementation of hufman codes.
+I referenced the same videos to understand the concept
+
+Thank You.
