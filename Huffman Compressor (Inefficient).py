@@ -106,13 +106,10 @@ class DataCompression:
         a = ''
         for i in range(0,len(self.encoded_text),8):
             a = self.encoded_text[i:i+8]
-            
-            print(a,"---------",int(a,2))
             b.append(int(a,2))
         return b
 
-str1 = '''Traverse the tree formed starting from the root. Maintain an auxiliary array.
-'''
+str1 = '''sleeplessness'''
 
 
 obj = DataCompression(str1)
@@ -122,8 +119,8 @@ obj.gen_Huffman_codes()
 obj.complete_huffman_codes()
 obj.gen_encoded_text(str1)
 b = obj.gen_byte_array()
-#print(obj.map_of_huffman_codes)
-#print(obj.encoded_text)
+print(obj.map_of_huffman_codes)
+print(obj.encoded_text)
 
 file1 = open("compressed.bin","wb")
 file1.write(b)
@@ -139,4 +136,3 @@ file2.close()
 
 print('Size of uncompressed file: ',os.stat('/home/sharmaketan14/Desktop/Codes/uncompressed.txt').st_size,"Bytes")
 print('Size of compressed file: ',os.stat('/home/sharmaketan14/Desktop/Codes/compressed.bin').st_size,"Bytes")
-
